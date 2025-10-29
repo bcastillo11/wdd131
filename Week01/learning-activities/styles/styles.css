@@ -1,5 +1,10 @@
 header, main, footer{
-    width: 100vw;
+    width: auto;
+    margin: 0;
+}
+
+*{
+    width: auto;
     margin: 0;
 }
 
@@ -14,32 +19,58 @@ header{
 }
 
 header h1{
-    grid-column: 0/5;
-    grid-row: 0/4;
+    grid-column: 1/5;
+    grid-row: 1/4;
 }
 
 .navigation-bar{
     display: flex;
     flex-direction: row;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    justify-content: space-between;
+    list-style: none;
+    /* padding: 1% 50%; */
+    margin: 0;
+    width: 102.1%;
+    background-color: black;
+    padding-right: 5%;
+}
+
+.navigation-bar li{
+    padding: 2.5% 40%;
     background-color: black;
     color: white;
-    grid-column: 0/5;
-    grid-row: 4/5;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navigation-bar a{
+    text-decoration: none;
+    color: white;
 }
 
 main{
     display: grid;
-    grid-template: 1fr / 3fr 1fr;
+    grid-template: repeat(8, 15%) / 3fr 1fr;
+    margin-bottom: 3.5%;
 }
 
 main div{
-    grid-column: 0/1;
+    grid-column: 1/2;
+    grid-row: 1/9;
     background-color: rgb(223, 215, 215);
     color: black;
+    padding-bottom: 20%;;
 }
 
 main aside{
-    grid-column: 1/2;
+    grid-column: 2/3;
+    grid-row: 1/9;
     background-color: antiquewhite;
     color: black;
 }
+
+footer{
+    padding-bottom: 5%;
+}   
