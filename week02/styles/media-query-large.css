@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media(min-width: 500px) {
     main{
         display: grid;
         grid-template: 1fr 4fr 0.5fr/ 1fr 1fr;
