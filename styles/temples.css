@@ -1,0 +1,99 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(41, 41, 127);
+  color: white;
+  position: relative; 
+}
+
+header p {
+  font-size: 2.5rem;
+  padding-top: 1.3rem;
+  padding-left: 1.3rem;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-align: right;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.6rem; 
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+#menu.show::before {
+  content: "❌";
+}
+
+nav {
+  width: 100%;
+  margin: 1rem auto; 
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1rem;
+}
+
+
+.navigation a {
+  display: none;              
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.12s ease, background-color 0.12s ease; 
+}
+
+.navigation a:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+.show a {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  gap: 1rem;
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(41, 41, 127);
+  color: white;
+  text-align: center;
+  padding: 1rem 0 1rem;
+  margin-top: 1rem;
+}
+

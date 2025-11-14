@@ -1,0 +1,7 @@
+@media (min-width:700px){
+    #menu::before{
+        content: none;
+    }
+
+    
+}
